@@ -20,7 +20,7 @@ func TestIsDevisableBySeven(t *testing.T) {
 	for _, input := range inputs {
 		actual := isDevisableBySeven(input.number)
 		if input.expected != actual {
-			t.Errorf("\"DevisableBySeven('%v')\" failed, expected -> %v, got -> %v", input.number, input.expected, actual)
+			t.Errorf("\"isDevisableBySeven(%v)\" failed, expected -> %v, got -> %v", input.number, input.expected, actual)
 		}
 	}
 }
