@@ -1,4 +1,4 @@
-package main
+package exercise001
 
 import (
 	"testing"
@@ -18,7 +18,7 @@ func TestIsDevisableBySeven(t *testing.T) {
 	}
 
 	for _, input := range inputs {
-		actual := IsDevisableBySeven(input.number)
+		actual := isDevisableBySeven(input.number)
 		if input.expected != actual {
 			t.Errorf("\"DevisableBySeven('%v')\" failed, expected -> %v, got -> %v", input.number, input.expected, actual)
 		}
